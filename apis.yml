@@ -1,7 +1,28 @@
 aid: stader
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/stader.png
 name: Stader
-description: 'Stader is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Stader Labs is a non-custodial, smart-contract-driven liquid-staking protocol
+  that lets users stake crypto assets and earn rewards while retaining liquidity
+  through liquid-staking tokens (ETHx, MaticX, BNBX, HBARX, NEARx) usable across
+  40+ DeFi protocols. Stader operates across multiple chains — Ethereum, Polygon,
+  BNB Chain, Hedera and NEAR — with open-source smart contracts and node tooling.
+  Its developer surface is on-chain contracts, a Go node client (stader-node) and
+  permissioned CLI, and public GitHub source rather than a hosted REST/OpenAPI API.
+  This profile was surfaced as an Accel portfolio company and enriched by the API
+  Evangelist pipeline; probes confirm no public HTTP API, well-known discovery, or
+  llms.txt surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/stader/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Crypto
+- Staking
+- Liquid Staking
+- DeFi
+- Ethereum
+- Blockchain
+- Web3
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +51,16 @@ maintainers:
 common:
 - type: Website
   url: https://staderlabs.com/
+- type: Documentation
+  url: https://www.staderlabs.com/docs/
+- type: GitHubOrganization
+  url: https://github.com/stader-labs
+- type: DomainSecurity
+  url: security/stader-domain-security.yml
+- type: WellKnown
+  url: well-known/stader-well-known.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
